@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewsList_DeleteNew.aspx.cs" Inherits="WEB.Handler.NewsList_DeleteNew" %>

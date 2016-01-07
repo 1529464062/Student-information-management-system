@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewsRelease_Add.aspx.cs" Inherits="WEB.Handler.NewsRelease_Add" %>

@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+
+namespace WEB.Handler
+{
+    public partial class CourseInfoManager_Delete : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            int CourseId = int.Parse(Request.QueryString["CourseId"]);
+            Maticsoft.BLL.course course_BLL = new Maticsoft.BLL.course();
+            Maticsoft.Model.course course_Model = new Maticsoft.Model.course();
+            Maticsoft.DAL.course course_Dal = new Maticsoft.DAL.course();
+            if (course_BLL.Delete_CourseId(CourseId))
+            {
+                Response.Write("ok");
+            }
+            else {
+                Response.Write("no");
+            }
+        }
+    }
+}

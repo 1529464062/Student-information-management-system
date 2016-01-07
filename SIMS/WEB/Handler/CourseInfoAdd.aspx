@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CourseInfoAdd.aspx.cs" Inherits="WEB.Handler.CourseInfoAdd" %>

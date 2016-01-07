@@ -1,0 +1,67 @@
+@charset "GBK";
+html { color: #333333; background: #f3f3f3; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+
+h1,  h3, h4, h5, h6 { font-size: 14px; }
+h2{font-size:20px;}
+
+a { color: #333333; text-decoration: none; outline: none; }
+
+a:hover { color: #ff7200; }
+
+ol, ul, li { list-style: none; }
+
+img { vertical-align: top; }
+
+fieldset, img { border: 0; }
+
+input { margin: 0; padding: 0; border: 0; }
+
+body, button, input, select, textarea { font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5b8b\4f53", Arial, Helvetica, sans-serif; }
+
+#box { width: 100%; overflow: hidden; }
+
+
+.btn a { width: 100px; height: 50px; background: #ff7200; color: #fff; display: block; text-align: center; line-height: 50px; font-size: 22px; margin-top: 30px; float:left;}
+.btn1 a { width: 100px; height: 50px; background: #ff7200; color: #fff; display: block; text-align: center; line-height: 50px; font-size: 22px; margin-top: 30px;float:left;margin-left:50px; }
+
+/*registered */
+.registered_out { width: 100%; background: #fff; padding-bottom: 200px; }
+
+.registered { width: 998px; margin: 0 auto; }
+
+.registered h2 { height: 110px; line-height: 110px; padding-left: 20px; }
+
+.reg-box { padding-left: 30px; }
+
+.reg-box li { line-height: 50px; margin: 10px 0 20px; width: 500px; overflow: hidden; }
+
+.reg-box li label { width: 60px; height: 50px; float: left; line-height: 50px; text-align: right; padding-right: 20px; }
+
+.reg-box li input { padding: 10px 0; font-size: 16px; width: 296px; height: 28px; line-height: 28px; border: 1px solid #dddddd; text-indent: 0.5em; float:none; }
+
+.registered .btn a { background: #ff7200; margin-left: 110px; }
+
+.add { width: 128px; height: 50px; float: left; _display: inline; cursor: pointer; margin-left: 20px; }
+
+.reg-box li .sradd { width: 148px; text-indent: 4px; font-size: 14px; }
+
+.reg-box li .input-code { width: 106px; padding: 10px; font-family: Arial; font-style: italic; color: red; letter-spacing: 1px; cursor: pointer; text-align: center; text-indent: 0; }
+
+.yzm { background: #ff7200; text-align: center; line-height: 50px; color: #fff; }
+
+.yzmc { background: #dddddd; text-align: center; line-height: 50px; color: #999; }
+
+.error { color: red; padding-left: 20px; float: left; }
+
+input { background-color: #fff; outline: none; }
+
+.reg-box li { width: auto; }
+
+.reg-box li input.errorC { border: 1px solid red; }
+
+.reg-box li input.checkedN { border: 1px solid #1ece6d; }
+
+em { font-style: normal; }
+

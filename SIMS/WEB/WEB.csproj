@@ -1,0 +1,373 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C0E7B77-399A-4F9C-9651-7AB41CB16CB1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEB</RootNamespace>
+    <AssemblyName>WEB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\StudentInfo.mdf">
+    </Content>
+    <Content Include="App_Data\StudentInfo_log.ldf">
+      <DependentUpon>StudentInfo.mdf</DependentUpon>
+    </Content>
+    <Content Include="Captcha.aspx" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\login.css" />
+    <Content Include="CSS\styles.css" />
+    <Content Include="CSS\supersized.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Html\index.html" />
+    <Content Include="IMG\1.png" />
+    <Content Include="IMG\app.png" />
+    <Content Include="IMG\backgrounds\0.jpg" />
+    <Content Include="IMG\backgrounds\1.jpg" />
+    <Content Include="IMG\backgrounds\2.jpg" />
+    <Content Include="IMG\backgrounds\3.jpg" />
+    <Content Include="IMG\bg1.png" />
+    <Content Include="IMG\captcha.jpeg" />
+    <Content Include="IMG\channel.png" />
+    <Content Include="IMG\cloud.png" />
+    <Content Include="IMG\custom.png" />
+    <Content Include="IMG\error.png" />
+    <Content Include="IMG\erweima.jpg" />
+    <Content Include="IMG\home.png" />
+    <Content Include="IMG\icons.png" />
+    <Content Include="IMG\ioc-02.png" />
+    <Content Include="IMG\ioc-03.png" />
+    <Content Include="IMG\ioc-04.png" />
+    <Content Include="IMG\ioc.png" />
+    <Content Include="IMG\loading.gif" />
+    <Content Include="IMG\location.png" />
+    <Content Include="IMG\logo.png" />
+    <Content Include="IMG\refreash.png" />
+    <Content Include="IMG\select_xl.png" />
+    <Content Include="IMG\select_xl01.png" />
+    <Content Include="IMG\source.png" />
+    <Content Include="IMG\statistics.png" />
+    <Content Include="IMG\syetem_management.png" />
+    <Content Include="IMG\system.png" />
+    <Content Include="JS\html5.js" />
+    <Content Include="JS\jquery-1.8.2.min.js" />
+    <Content Include="JS\login.js" />
+    <Content Include="JS\scripts.js" />
+    <Content Include="JS\supersized-init.js" />
+    <Content Include="JS\supersized.3.2.7.min.js" />
+    <Content Include="JS\tooltips.js" />
+    <Content Include="JS\jquery-1.8.3.min.js" />
+    <Content Include="JS\menu.js" />
+    <Content Include="login.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Captcha.aspx.cs">
+      <DependentUpon>Captcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Captcha.aspx.designer.cs">
+      <DependentUpon>Captcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CouresInfoSelect.aspx.cs">
+      <DependentUpon>CouresInfoSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CouresInfoSelect.aspx.designer.cs">
+      <DependentUpon>CouresInfoSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CouresInfoSelect_Delete.aspx.cs">
+      <DependentUpon>CouresInfoSelect_Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CouresInfoSelect_Delete.aspx.designer.cs">
+      <DependentUpon>CouresInfoSelect_Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CouresInfoSelect_Update.aspx.cs">
+      <DependentUpon>CouresInfoSelect_Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CouresInfoSelect_Update.aspx.designer.cs">
+      <DependentUpon>CouresInfoSelect_Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CourseInfoAdd.aspx.cs">
+      <DependentUpon>CourseInfoAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CourseInfoAdd.aspx.designer.cs">
+      <DependentUpon>CourseInfoAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CourseInfoManager.aspx.cs">
+      <DependentUpon>CourseInfoManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CourseInfoManager.aspx.designer.cs">
+      <DependentUpon>CourseInfoManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CourseInfoManager_Delete.aspx.cs">
+      <DependentUpon>CourseInfoManager_Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CourseInfoManager_Delete.aspx.designer.cs">
+      <DependentUpon>CourseInfoManager_Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\courseSelectList.aspx.cs">
+      <DependentUpon>courseSelectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\courseSelectList.aspx.designer.cs">
+      <DependentUpon>courseSelectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\course_Update.aspx.cs">
+      <DependentUpon>course_Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\course_Update.aspx.designer.cs">
+      <DependentUpon>course_Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\fileUpLoad.aspx.cs">
+      <DependentUpon>fileUpLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\fileUpLoad.aspx.designer.cs">
+      <DependentUpon>fileUpLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\NewsList_DeleteNew.aspx.cs">
+      <DependentUpon>NewsList_DeleteNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\NewsList_DeleteNew.aspx.designer.cs">
+      <DependentUpon>NewsList_DeleteNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\NewsList_GetList.aspx.cs">
+      <DependentUpon>NewsList_GetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\NewsList_GetList.aspx.designer.cs">
+      <DependentUpon>NewsList_GetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\NewsRelease_Add.aspx.cs">
+      <DependentUpon>NewsRelease_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\NewsRelease_Add.aspx.designer.cs">
+      <DependentUpon>NewsRelease_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\studentInfoInsert.aspx.cs">
+      <DependentUpon>studentInfoInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\studentInfoInsert.aspx.designer.cs">
+      <DependentUpon>studentInfoInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\studentInfoInsert_Add.aspx.cs">
+      <DependentUpon>studentInfoInsert_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\studentInfoInsert_Add.aspx.designer.cs">
+      <DependentUpon>studentInfoInsert_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\studentInfoSelect.aspx.cs">
+      <DependentUpon>studentInfoSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\studentInfoSelect.aspx.designer.cs">
+      <DependentUpon>studentInfoSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\studentInfoSelectList.aspx.cs">
+      <DependentUpon>studentInfoSelectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\studentInfoSelectList.aspx.designer.cs">
+      <DependentUpon>studentInfoSelectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\StudentInfoSelect_Delete.aspx.cs">
+      <DependentUpon>StudentInfoSelect_Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\StudentInfoSelect_Delete.aspx.designer.cs">
+      <DependentUpon>StudentInfoSelect_Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\student_course_getStudentIdList.aspx.cs">
+      <DependentUpon>student_course_getStudentIdList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\student_course_getStudentIdList.aspx.designer.cs">
+      <DependentUpon>student_course_getStudentIdList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\updatePassword.aspx.cs">
+      <DependentUpon>updatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\updatePassword.aspx.designer.cs">
+      <DependentUpon>updatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\View_Course.aspx.cs">
+      <DependentUpon>View_Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\View_Course.aspx.designer.cs">
+      <DependentUpon>View_Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\View_Course_GetStudentIdList.aspx.cs">
+      <DependentUpon>View_Course_GetStudentIdList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\View_Course_GetStudentIdList.aspx.designer.cs">
+      <DependentUpon>View_Course_GetStudentIdList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9FE00521-3A8B-42B1-814E-585E99407B2E}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CSS\bootstrap-cerulean.min.css" />
+    <Content Include="CSS\index.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Handler\CouresInfoSelect.aspx" />
+    <Content Include="Handler\CouresInfoSelect_Delete.aspx" />
+    <Content Include="Handler\CouresInfoSelect_Update.aspx" />
+    <Content Include="Handler\CourseInfoAdd.aspx" />
+    <Content Include="Handler\CourseInfoManager.aspx" />
+    <Content Include="Handler\CourseInfoManager_Delete.aspx" />
+    <Content Include="Handler\courseSelectList.aspx" />
+    <Content Include="Handler\course_Update.aspx" />
+    <Content Include="Handler\fileUpLoad.aspx" />
+    <Content Include="Handler\Login.aspx" />
+    <Content Include="Handler\NewsList_DeleteNew.aspx" />
+    <Content Include="Handler\NewsList_GetList.aspx" />
+    <Content Include="Handler\NewsRelease_Add.aspx" />
+    <Content Include="Handler\studentInfoInsert.aspx" />
+    <Content Include="Handler\studentInfoInsert_Add.aspx" />
+    <Content Include="Handler\studentInfoSelect.aspx" />
+    <Content Include="Handler\studentInfoSelectList.aspx" />
+    <Content Include="Handler\StudentInfoSelect_Delete.aspx" />
+    <Content Include="Handler\student_course_getStudentIdList.aspx" />
+    <Content Include="Handler\updatePassword.aspx" />
+    <Content Include="Handler\View_Course.aspx" />
+    <Content Include="Handler\View_Course_GetStudentIdList.aspx" />
+    <Content Include="JS\index.js" />
+    <Content Include="JS\jquery-1.7.1.js" />
+    <Content Include="JS\jquery.form.js" />
+    <Content Include="WebForm1.aspx" />
+    <None Include="IMG\backgrounds\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fileUpLoad\" />
+    <Folder Include="WebService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2087</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

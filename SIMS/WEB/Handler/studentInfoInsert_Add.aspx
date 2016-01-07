@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="studentInfoInsert_Add.aspx.cs" Inherits="WEB.Handler.studentInfoInsert_Add" %>
