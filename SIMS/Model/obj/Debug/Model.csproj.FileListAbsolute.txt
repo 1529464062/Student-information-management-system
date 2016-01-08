@@ -1,0 +1,5 @@
+E:\Project\Student-information-management-system\SIMS\Model\bin\Debug\.Model.dll
+E:\Project\Student-information-management-system\SIMS\Model\bin\Debug\.Model.pdb
+E:\Project\Student-information-management-system\SIMS\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Student-information-management-system\SIMS\Model\obj\Debug\.Model.dll
+E:\Project\Student-information-management-system\SIMS\Model\obj\Debug\.Model.pdb

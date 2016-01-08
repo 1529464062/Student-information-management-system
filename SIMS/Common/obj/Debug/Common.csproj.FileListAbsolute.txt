@@ -1,0 +1,9 @@
+E:\Project\Student-information-management-system\SIMS\Common\bin\Debug\.Common.dll
+E:\Project\Student-information-management-system\SIMS\Common\bin\Debug\.Common.pdb
+E:\Project\Student-information-management-system\SIMS\Common\bin\Debug\COM.Excel.dll
+E:\Project\Student-information-management-system\SIMS\Common\bin\Debug\Excel.dll
+E:\Project\Student-information-management-system\SIMS\Common\bin\Debug\OpenSmtp.dll
+E:\Project\Student-information-management-system\SIMS\Common\bin\Debug\OWC10Chart.dll
+E:\Project\Student-information-management-system\SIMS\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Student-information-management-system\SIMS\Common\obj\Debug\.Common.dll
+E:\Project\Student-information-management-system\SIMS\Common\obj\Debug\.Common.pdb

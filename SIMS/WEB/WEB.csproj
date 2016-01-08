@@ -332,9 +332,12 @@
     <Content Include="Handler\updatePassword.aspx" />
     <Content Include="Handler\View_Course.aspx" />
     <Content Include="Handler\View_Course_GetStudentIdList.aspx" />
+    <Content Include="JS\area.js" />
     <Content Include="JS\index.js" />
     <Content Include="JS\jquery-1.7.1.js" />
     <Content Include="JS\jquery.form.js" />
+    <Content Include="JS\location.js" />
+    <Content Include="JS\getSelected.js" />
     <Content Include="WebForm1.aspx" />
     <None Include="IMG\backgrounds\Thumbs.db" />
   </ItemGroup>

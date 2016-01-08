@@ -42,6 +42,12 @@ namespace WEB.Handler
                     else {
                         Response.Write("ok");
                     }
+                    if (Request.QueryString["Img"] != null) {
+                        string imgPath = Server.MapPath(Request.QueryString["Img"]);
+                        if (System.IO.File.Exists(imgPath)) {
+                            System.IO.File.Delete(imgPath);
+                        }
+                    }
                 }
                 else
                 {
